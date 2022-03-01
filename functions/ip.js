@@ -12,7 +12,7 @@ exports.handler = (event, context, callback) => {
     body: JSON.stringify({
       ip:
         event.headers['client-ip'] !== '::1'
-          ? event.headers['client-ip']
+          ? event.headers['x-nf-client-connection-ip']
           : '127.0.0.1'
     })
   })
