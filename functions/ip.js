@@ -1,7 +1,7 @@
 /**
- * Returns the IP address for this request.
+ * Returns the IP address of the visitor that made
+ * a requests to this function.
  */
-
 exports.handler = async (event) => {
   return {
     statusCode: 200,
