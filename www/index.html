@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify IP function</title>
+    <link rel="stylesheet" href="./example.css" />
+  </head>
+  <body>
+    <h1>Oh, hello.</h1>
+    <p class="text">Your IP address is <tt>loading</tt></p>
+    <p>
+      Get the code for all this
+      <a href="https://github.com/mraichelson/netlify-ip-function">on Github</a
+      >.
+    </p>
+    <script>
+      const getIp = async () => {
+        try {
+          const json = await fetch('/api/ip')
+          const res = await json.json()
+          document.querySelector('p.text tt').innerHTML = res.ip
+        } catch (error) {
+          document.querySelector('p.text').innerHTML =
+            "Well, that's embarrassing. I've returned an error <small>(I've logged it to the console)</small>. Whoops."
+          console.log(error)
+        }
+      }
+      getIp()
+    </script>
+  </body>
+</html>

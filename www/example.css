@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  color: #444;
+  display: grid;
+  padding: 3rem;
+  place-content: center;
+}
+body > * + * {
+  margin-top: 1rem;
+}
+tt {
+  background-color: #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.25rem;
+}

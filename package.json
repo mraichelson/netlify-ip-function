@@ -1,0 +1,23 @@
+{
+  "name": "netlify-ip-function",
+  "version": "1.0.0",
+  "description": "Ever needed to check the IP address of a user in your (client-side) JS code? Me too.",
+  "scripts": {
+    "local": "netlify dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mraichelson/netlify-ip-function.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Michael Raichelson",
+    "email": "i.am@michaelraichelson.com",
+    "url": "https://michaelraichelson.com/"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mraichelson/netlify-ip-function/issues"
+  },
+  "homepage": "https://github.com/mraichelson/netlify-ip-function#readme"
+}
