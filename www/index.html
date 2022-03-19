@@ -18,9 +18,9 @@
     <script>
       const getIp = async () => {
         try {
-          const json = await fetch('/api/ip')
-          const res = await json.json()
-          document.querySelector('p.text tt').innerHTML = res.ip
+          const res = await fetch('/api/ip')
+          const json = await res.json()
+          document.querySelector('p.text tt').innerHTML = json.ip
         } catch (error) {
           document.querySelector('p.text').innerHTML =
             "Well, that's embarrassing. I've returned an error <small>(I've logged it to the console)</small>. Whoops."
